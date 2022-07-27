@@ -253,3 +253,13 @@ native bool:AddServerRule(const name[], const value[]);
 native bool:SetServerRule(const name[], const value[]);
 native bool:IsValidServerRule(const name[]);
 native bool:RemoveServerRule(const name[]);
+
+native SendClientMessagef(playerid, color, const message[], {Float,_}:...);
+native SendClientMessageToAllf(color, const message[], {Float,_}:...);
+native GameTextForPlayerf(playerid, displaytime, style, const message[], {Float,_}:...);
+native GameTextForAllf(displaytime, style, const message[], {Float,_}:...);
+native SendPlayerMessageToPlayerf(playerid, senderid, const message[], {Float,_}:...);
+native SendPlayerMessageToAllf(senderid, const message[], {Float,_}:...);
+native SendRconCommandf(const command[], {Float,_}:...);
+native GetRunningTimers();
+native RemovePlayerWeapon(playerid, weaponid);
